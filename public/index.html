@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مساعد العمل الذكي</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Browser Section -->
+    <div class="browser-section">
+      <div class="browser-header">
+        <input 
+          type="text" 
+          id="urlInput" 
+          class="url-input" 
+          placeholder="أدخل رابط الموقع..."
+          value="https://www.google.com"
+        >
+        <button id="loadBtn" class="btn btn-primary">تحميل</button>
+        <button id="refreshBtn" class="btn btn-secondary">تحديث</button>
+      </div>
+      <div class="browser-content">
+        <iframe id="pageFrame" class="page-iframe"></iframe>
+        <div class="loading" id="loading">جاري التحميل...</div>
+      </div>
+    </div>
+
+    <!-- Chat Assistant Section -->
+    <div class="chat-section">
+      <div class="chat-header">
+        <h2>🤖 مساعدك الذكي</h2>
+        <button id="clearBtn" class="btn btn-small">مسح</button>
+      </div>
+      
+      <div class="chat-messages" id="chatMessages">
+        <div class="message assistant-message">
+          <p>مرحباً! 👋 أنا مساعدك الذكي. يمكنني مساعدتك في:</p>
+          <ul>
+            <li>شرح محتوى الصفحة الحالية</li>
+            <li>الإجابة عن أسئلتك حول الموقع</li>
+            <li>تقديم اقتراحات للخطوات التالية</li>
+            <li>شرح كيفية استخدام أي خدمة</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="chat-input-area">
+        <textarea 
+          id="chatInput" 
+          class="chat-input" 
+          placeholder="اكتب سؤالك هنا..."
+          rows="3"
+        ></textarea>
+        <button id="sendBtn" class="btn btn-primary btn-send">إرسال</button>
+      </div>
+
+      <div class="chat-actions">
+        <button id="summarizeBtn" class="btn btn-action">📋 ملخص الصفحة</button>
+        <button id="helpBtn" class="btn btn-action">❓ ماذا أفعل؟</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

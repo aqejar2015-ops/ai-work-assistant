@@ -1,0 +1,19 @@
+{
+  "name": "ai-work-assistant",
+  "version": "1.0.0",
+  "description": "Web browser with integrated AI assistant for work tasks",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/server.js",
+    "start": "node src/server.js"
+  },
+  "keywords": ["ai", "assistant", "web-browser", "chatbot"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "openai": "^4.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3"
+  }
+}
